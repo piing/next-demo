@@ -1,9 +1,7 @@
-import React from 'react'
-
-
+'use client'
+import React from "react";
 
 export default function CComponent() {
-  return (
-    <div>CComponent test!</div>
-  )
+  "use client";
+  return <div>CComponent test!</div>;
 }

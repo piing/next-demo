@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 import CComponent from "./ccomponent";
 import BComponent from "./bcomponent";
@@ -21,19 +22,20 @@ export const AComponent: React.FC = () => {
 */
 
 export default function AComponent() {
-    "use client"
-    const [count,setCount]=useState(0);
+  "use client";
+  const [count, setCount] = useState(0);
 
-    const handleClick=():void=>{
-        console.log('click');
-        setCount((pre)=>pre+1);
-    }
+  const handleClick = (): void => {
+    console.log("click");
+    setCount((pre) => pre + 1);
+  };
 
-    console.log('A is update!');
-    return<>
-        <div>count is {count}</div>
-        <BComponent onClick={handleClick} />
-        <CComponent />
+  console.log("A is update!");
+  return (
+    <>
+      <div>count is {count}</div>
+      <BComponent onClick={handleClick} />
+      <CComponent />
     </>
-};
-
+  );
+}
